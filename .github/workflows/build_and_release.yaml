@@ -52,8 +52,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
         matrix:
-          os: [ windows-latest, ubuntu-latest, macOS-latest ]
-        fail-fast: false
+          os: [ windows-latest]
     steps:
       - name: Install Dependencies
         if: runner.os == 'Linux'
